@@ -2,7 +2,7 @@
 
 cd $HELM_PLUGIN_DIR
 version="$(cat plugin.yaml | grep "version" | cut -d '"' -f 2)"
-echo "Installing helm-kubeval v${version} ..."
+echo "Installing helm-kubeval ${version} ..."
 
 unameOut="$(uname -s)"
 
